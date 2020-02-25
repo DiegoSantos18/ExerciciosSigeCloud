@@ -1,0 +1,22 @@
+<h2>Localização por API: </h2>
+
+<form #formbusca = "ngForm" (ngSubmit) = "getLocalizacaoIp(formbusca.value)">
+    <div class="input-field">
+        <label for="ip">ID:</label>
+        <input class="validate" type = "text" name = "ip" id="ip" placeholder = "Ex: 177.104.108.7" ngModel>&nbsp;
+    </div>
+        <input type = "submit" value = "buscar">
+</form>
+
+
+
+<table>
+    <tr>
+        <th>Cidade</th>
+        <th>UF</th>
+    </tr>
+    <tr>
+        <td>{{localizacao.city}}</td>
+        <td>{{localizacao.region_code}}</td>
+    </tr>
+</table>
