@@ -9,7 +9,7 @@ import { Component, OnInit, APP_ID } from '@angular/core';
 export class TesteApiComponent implements OnInit {
   
   //var localização
-  localizacao: any;
+  localizacao: any = "";
   
   //Importar o serviço teste Api no construtor
   constructor(private TesteApiService : TesteApiService) { }
